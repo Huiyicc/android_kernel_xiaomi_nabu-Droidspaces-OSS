@@ -47,7 +47,7 @@ command -v aarch64-elf-gcc >/dev/null || { echo "E: 工具链不可用"; exit 1;
 if [ ! -e drivers/kernelsu/core/init.c ]; then
     echo "W: drivers/kernelsu 失效，重建 symlink ..."
     ln -sfn ../../KernelSU-Next/kernel drivers/kernelsu
-    [ -e drivers/kernelsu/core/init.c ] || { echo "E: KernelSU-Next 仓库不在 ../KernelSU-Next，请先 clone"; exit 1; }
+    [ -e drivers/kernelsu/core/init.c ] || { echo "E: KernelSU-Next 仓库不在 ../KernelSU-Next，请先执行: git clone https://github.com/Huiyicc/KernelSU-Next -b legacy ../KernelSU-Next"; exit 1; }
 fi
 
 # ---- 环境变量 ----

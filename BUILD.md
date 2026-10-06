@@ -3,7 +3,7 @@
 小米平板 5（nabu / hanoi）社区维护内核，基于 Xiaomi sm8150 4.14.325 源码。
 
 - 已合并 [Droidspaces](../Droidspaces-OSS/Documentation/zh-CN/Kernel-Configuration.md) 容器支持配置（namespaces/cgroups/网络全套）
-- 已集成 [KernelSU-Next](https://github.com/KernelSU-Next/KernelSU-Next)（legacy 分支，Manual Hook 模式）
+- 已集成 [KernelSU-Next](https://github.com/Huiyicc/KernelSU-Next)（legacy 分支，Manual Hook 模式）
 
 ## 快速开始
 
@@ -28,7 +28,7 @@
 
 ```bash
 # 前置：把 KernelSU-Next（legacy 分支）clone 到与本仓库平级
-git clone https://github.com/KernelSU-Next/KernelSU-Next -b legacy ../KernelSU-Next
+git clone https://github.com/Huiyicc/KernelSU-Next -b legacy ../KernelSU-Next
 ln -sf ../../KernelSU-Next/kernel drivers/kernelsu   # 脚本也会自动做
 ```
 
