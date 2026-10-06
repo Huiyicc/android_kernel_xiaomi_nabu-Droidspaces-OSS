@@ -139,3 +139,6 @@ CosmicFresh/*.zip
 CosmicFresh/dtb*
 CosmicFresh/Image
 build-shit
+
+# KernelSU external symlink (points to ../KernelSU-Next, not tracked)
+/drivers/kernelsu
